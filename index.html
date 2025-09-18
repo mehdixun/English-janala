@@ -90,13 +90,31 @@
         </section>
 
         <!-- Learn section -->
-         <section class="w-11/12 mx-auto">
+         <section class="w-11/12 mx-auto my-5">
           <h2 class="font-bold text-[36px] text-center"><span class="text-sky-400">Let's</span> Learn Vocabularies</h2>
 
           <div id="level-container" class="flex gap-5 flex-wrap justify-center">
             
           </div>
          </section>
+
+         <!-- Search -->
+          <section class="flex justify-center items-center">
+            <div class="join">
+  <div>
+    <label class="input validator join-item">
+      
+      <input id="input-search" type="text" placeholder="Search vocabularies" required />
+    </label>
+  </div>
+  <button id="btn-search" class="btn btn-primary join-item">Search</button>
+</div>
+          </section>
+
+         <!-- Spinner -->
+          <section id="spinner" class="flex justify-center items-center py-5 hidden">
+  <span class="loading loading-bars loading-lg"></span>
+          </section>
 
          <!-- Word container section -->
          <section id="word-container" class="w-11/12 mx-auto my-10 bg-gray-100 p-10 grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -106,6 +124,22 @@
           </div>
          </section>
     </main>
+
+    <!-- Modal section -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="details-container" class="space-y-4">
+      
+      </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  
+</dialog>
 
     <!-- Script JS -->
      <script src="Script/index.js"></script>
